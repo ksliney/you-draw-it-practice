@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+      svg { 
+        display: block;
+        margin: 0 auto;
+      }
+
+      h1 { margin-bottom: 2rem; }
+
+      body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      h3 { 
+        margin-top: 3rem; 
+        margin-bottom: 1rem;
+      }
+
+      .container {
+        max-width: 66rem;
+      }
+
+      img.block {
+        display: block;
+        border: solid #333 1p;
+        margin: 0 auto;
+      }
+
+      .sphere {
+        fill: none;
+        stroke: #000;
+        stroke-width: 3px;
+      }
+
+/*      .fill {
+        fill: #fff;
+      }
+*/
+      .graticule {
+        fill: none;
+        stroke: #777;
+        stroke-width: .5px;
+        stroke-opacity: .5;
+      }
+
+      h3 small {
+        background: #fff880;
+      }
+
+      #chart-6 svg {
+        display: inline;
+      }
+
+    </style>
+  </head>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Y O U * D R A W * I T</h1>
+      <p>Inspired by: <a href="https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html">here</a>.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+
+      <h3>Chart 3: You Draw It</h3>
+      <p>Let's combine our line-drawing powers with existing lines, clipping masks, animations, and probably some more stuff to actually build a <a href="https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html">full-fledged you-draw-it</a>.</p>
+
+      <div id="you-draw-it">
+      </div>
+
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+  <script src="03-you-draw-it.js"></script>
+</div>
+</body>
+</html>
